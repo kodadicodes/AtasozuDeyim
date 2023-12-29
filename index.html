@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atasözü Ve Deyimler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul id="sonuc">
+        <!--Burada sonuçlar için liste elemanları görüntülenecektir.-->
+    </ul>
+    <div id="container">
+        <h3 class="baslik">Atasözü ve Deyim arama</h3>
+        <label for="aramaKutusu">Arama için ipucunu giriniz :</label>
+
+        <!--HTML’de input etiketiyle birlikte list özelliği kullanıldığında, input elemanı bir datalist ile ilişkilendirilirdatalist, input kontrolü için önceden tanımlanmış seçenekler içerir.
+            
+            Bu örnekte, kullanıcı input alanına bir şey yazdığında, datalist içindeki önceden tanımlanmış seçenekler otomatik olarak önerilir-->
+        <input list="aramaListesi" id="aramaKutusu">
+        <datalist id="aramaListesi">
+            <!--Burda arama için ipucu başlıkları görüntülenecektir.-->
+        </datalist>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
